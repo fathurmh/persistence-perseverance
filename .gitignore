@@ -1,0 +1,12 @@
+node_modules
+.cache/
+public/
+bin/
+contentful/
+
+.DS_Store
+yarn*
+.env*
+.contentful.json
+npm-debug.log
+package-lock.json
