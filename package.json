@@ -39,6 +39,7 @@
     "gatsby-transformer-remark": "^1.7.41",
     "inquirer": "^5.2.0",
     "lodash": "^4.17.5",
+    "npm": "^6.1.0",
     "path": "^0.12.7",
     "react": "^16.4.0",
     "react-adsense": "0.0.5",
