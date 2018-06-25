@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import config from '../utils/siteConfig'
 
 const Header = styled.header`
   background: ${props => props.theme.colors.base};
@@ -8,6 +9,7 @@ const Header = styled.header`
   padding: 1.5em 0;
   z-index: 100;
   position: fixed;
+  box-shadow: 0 0 10px 1px ${props => props.theme.colors.base};
 `
 const Nav = styled.nav`
   width: 100%;
@@ -27,6 +29,7 @@ const Nav = styled.nav`
       position: relative;
       margin: 0;
       flex-basis: 100%;
+      text-transform: uppercase;
     }
   }
 
@@ -42,7 +45,7 @@ const Nav = styled.nav`
   }
 `
 const activeLinkStyle = {
-  color: 'b'
+  color: 'white'
 }
 
 const Menu = (props) => {
@@ -52,7 +55,7 @@ const Menu = (props) => {
         <ul>
           <li>
             <Link to="/" exact activeStyle={activeLinkStyle}>
-              Persistence Perseverance
+              {config.siteTitle}
             </Link>
           </li>
           <li>
